@@ -1,12 +1,51 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barber Shop Website</title>
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    
- </body>
- </html>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner">
+        <img src="images/Barber_Shop_img/logo.png" alt="Barber Shop Logo" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+        </div>
+        <div class="banner-btn">
+            <a href="#"><span></span>Find Out</a>
+            <a href="#"><span></span>Read More</a>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">TESTIMONIALS</a></li>
+            <li><a href="">MEET US</a></li>
+        </ul>
+    </nav>
+    <div id="manuBtn">
+        <img src="images/Barber_Shop_img/menu.png" alt="manuBtn" id="manu">
+    </div>
+    <script>
+        var manuBtn = document.getElementById("manuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("manu");
+
+        sideNav.style.right = "-250px";
+
+        manuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+</html>
